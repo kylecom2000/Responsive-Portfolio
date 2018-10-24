@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1526635229611-9a2482c8427b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d65e05ee1dd24785f5de87ae45e506fe&auto=format&fit=crop&w=1950&q=80);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body header > div {
+    display:flex;
+    flex-direction: row;
+    max-width: 960px;
+    margin: 0 auto;
+    max-height: 100px;
+    
+}
+
+header {
+    width: 100%;
+    border-bottom: 3px solid #CCC;
+    background-color: #ffffff;
+    max-height: 100px;
+    margin-bottom: 15px;
+    
+}
+
+nav {
+    align-self: flex-end;
+    justify-items: flex-end;
+    width:100%;
+}
+
+nav ul {
+    display:flex;
+    float: right;
+}
+
+nav a {
+    float:left;
+    white-space: nowrap;
+    align-content: flex-end;
+    justify-content: flex-end;
+    color:rgb(114, 112, 112);
+    background-color: white;
+    padding:50px 20px 20px 20px;
+    margin-bottom: 10px;
+    }
+
+header a {
+    text-decoration: none;
+}
+
+.logo {
+    display:block;
+    width: 350px;
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    font-weight: bolder;
+    background: #4AAAA5;
+    text-align: center;
+    line-height: 90px;
+}
+
+.container {
+    clear: both;
+    max-width: 960px;
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 18px;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.container div {
+    float: left;
+    padding: 5px 10px 30px 10px;
+}
+
+
+h2 {
+    width: 100%;
+    padding-top: 20px;
+    font-size: 40px;
+    border-bottom: 3px solid #CCC;
+    padding-bottom: 15px;
+    color: #4AAAA5;
+    font-weight: bold;
+}
+
+#bio-image {
+    padding: 4px;
+    float: left;
+    width: 30%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+footer {
+    width: 100%;
+    background-color: #454545;
+    height: 50px;
+    border-top: 5px solid #4AAAA5;
+    vertical-align: baseline;
+    color:white;
+    position: fixed;
+    bottom:0;
+}
+
+footer div {
+    padding: 0, 0, 10px, 0;
+    position: fixed;
+    bottom:0; 
+    left: 45%;
+}
+
+#pPic {
+	float: left;
+	max-height: 200px;
+	max-width: 200px;
+	/* margin-right: 10px; */
+}
+
+.pItem {
+	/* margin-top: 5px; */
+	/* margin-bottom: 5px; */
+	position: relative;
+}
+
+.overPItem {
+    position: absolute;
+	bottom: 40px;
+    width: 200px;
+	text-align: center;
+    background-color:#4AAAA5;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.overPItem a {
+    text-decoration: none;
+    color:#ebebeb;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.messageInput {
+    height: 170px;
+    text-align: left;
+    text-justify: auto;
+}
+
+#submit {
+    background-color: #4AAAA5;
+}
+
+#submit a {
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    display:block;
+    padding: 15px;
+}
+
+@media (max-width: 2000px) {
+    body {max-width: 2000px;}
+    form {width: 900px;}
+}
+
+@media (max-width: 980px) {
+    body {max-width: 980px;}
+    form {width: 900px;}
+}
+
+@media (max-width: 768px) {
+    body {max-width: 768px;}
+    form {width: 650px;}
+    .logo {
+        line-height: 45px;
+        width: 300px;
+    }
+    
+}
+
+@media (max-width: 640px) {
+    body {max-width: 640px;}
+    form {width: 400px;}
+    .logo {
+        line-height: 45px;
+    }
+}
